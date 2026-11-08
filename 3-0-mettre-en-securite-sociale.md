@@ -1,0 +1,5 @@
+<!-- Source : https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale — L'Avenir en commun (édition 2027), La France insoumise. Licence CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr). Converti en markdown le 8 novembre 2026. -->
+
+## Partie 3 – Mettre en sécurité sociale
+
+Dans notre pays, un parent sur trois se prive de manger pour nourrir ses enfants, sept personnes sur dix ont déjà renoncé à se soigner, et plus de 2 000 enfants dorment dans la rue chaque nuit. Les plus exposés à cette violence sociale sont les femmes, les enfants, les jeunes, les familles monoparentales, les personnes âgées, en situation de handicap ou LGBTI. Ce bilan, c’est celui du logiciel libéral : à force de coupes budgétaires, il détruit les infrastructures de notre système social et *in fine* nos droits. Il y a donc urgence à mettre en sécurité sociale la Nouvelle France. Ce qui veut dire réparer ce qui a été cassé, mais aussi étendre et créer de nouveaux droits sociaux et économiques. La Sécurité sociale, bâtie en 1945, n’est pas un acquis à démanteler, mais un principe d’organisation de la société à élargir pour généraliser une vie meilleure.

@@ -1,0 +1,9 @@
+# Archive des anciennes versions (extraction LLM)
+avenir-en-commun-2027.zip
+
+# Python
+__pycache__/
+*.pyc
+
+# Cache HTML optionnel de tools/extract_aec.py --cache
+cache-html/
