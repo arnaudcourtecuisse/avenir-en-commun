@@ -1,0 +1,12 @@
+{
+  "name": "avenir-en-commun",
+  "version": "1.0.0",
+  "description": "Explorer le programme L'Avenir en commun (2027) de La France insoumise : questions-réponses sourcées, recherche de mesures, synthèses et mesures concernant une situation personnelle. Lit le texte intégral sur GitHub.",
+  "author": {
+    "name": "Arnaud Courtecuisse"
+  },
+  "homepage": "https://github.com/arnaudcourtecuisse/avenir-en-commun",
+  "repository": "https://github.com/arnaudcourtecuisse/avenir-en-commun",
+  "license": "AGPL-3.0-or-later",
+  "keywords": ["avenir-en-commun", "france-insoumise", "programme", "presidentielle-2027", "politique"]
+}

@@ -6,13 +6,13 @@ Creative Commons Attribution - Pas d'Utilisation Commerciale - Partage dans
 les Mêmes Conditions 4.0 International (CC BY-NC-SA 4.0) :
 https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr
 
-La conversion en Markdown (fichiers *.md) est diffusée sous la même licence,
+La conversion en Markdown (dossier doc/) est diffusée sous la même licence,
 comme l'exige sa clause de partage dans les mêmes conditions. Le texte
 officiel de la licence suit.
 
-Le code du dossier tools/ n'est pas couvert par ce fichier : il est diffusé
-sous GNU Affero General Public License v3.0 ou ultérieure (AGPL-3.0-or-later),
-voir tools/LICENSE.
+Le code et la skill (dossiers tools/, skills/, .claude-plugin/ et dist/) ne
+sont pas couverts par ce fichier : ils sont diffusés sous GNU Affero General
+Public License v3.0 ou ultérieure (AGPL-3.0-or-later), voir tools/LICENSE.
 
 =======================================================================
 

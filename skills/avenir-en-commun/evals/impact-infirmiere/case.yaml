@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: impact-infirmiere
+expected_outcome: |
+  Mesures classées de la plus directe à la plus générale : hôpital public et soignants (chapitre 4.4), retraites (3.1.7), salaires et fonction publique (2.2.3), sans calcul individuel inventé ni demande d'informations personnelles superflues.
