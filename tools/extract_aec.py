@@ -367,7 +367,7 @@ def write_index(out: Path, r: Renderer, parts_meta: list, today: str, keep_space
          f"Généré automatiquement par `tools/extract_aec.py` (texte relevé le {today}). "
          "Chaque section porte un numéro partie.chapitre.section, son nombre de mesures "
          "et un lien vers la section sur le site officiel. Les identifiants de mesures de "
-         "`mesures.jsonl` (ex. `1.1.1-3`, sous-mesure `5.2.1-4.1`) prolongent cette numérotation ; "
+         "`mesures.jsonl` (ex. `1.1.1-3`, sous-mesure `2.2.3-3.1`) prolongent cette numérotation ; "
          "ils sont positionnels et peuvent changer si le site modifie le programme."]
     for ptitle, pfile, chaps in parts_meta:
         L += ["", f"## {ptitle} — [{pfile}]({pfile})"]

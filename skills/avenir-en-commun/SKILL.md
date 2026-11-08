@@ -44,6 +44,15 @@ Lisez les fichiers bruts sous `https://raw.githubusercontent.com/arnaudcourtecui
 - `00-introduction.md` (texte de Jean-Luc Mélenchon) et `N-0-….md` (présentation de chaque partie).
 - `mesures.jsonl` (~680 Ko) : toutes les mesures, une par ligne, avec identifiant, type, section et lien. Il est utile pour un relevé exhaustif, mais trop long pour être lu en entier si un chapitre suffit.
 
+Un outil de lecture web peut résumer ce qu'il lit. Demandez-lui explicitement de rendre **le texte mot pour mot**, sans résumer, avec les titres et les listes, et lisez de préférence les fichiers de chapitre, qui sont courts. Si vous n'obtenez qu'un résumé, dites-le, et ne présentez entre guillemets que ce que vous avez réellement lu tel quel.
+
+Sans le script, retrouvez l'identifiant d'une mesure à partir de sa position :
+- le numéro de section `P.C.S` est donné par `SOMMAIRE.md` ;
+- dans la section, les mesures sont numérotées 1, 2, 3… dans l'ordre du fichier, la mesure clé comptant pour 1 ;
+- une sous-mesure prend le numéro de sa mesure suivi de `.1`, `.2`… (ex. `2.2.3-3.1`).
+
+Avec le script, le problème ne se pose pas : sans réseau, il se rabat sur la copie de `doc/` livrée avec le plugin Claude Code, et le signale.
+
 Si aucune des deux méthodes ne marche, dites-le franchement et n'improvisez pas à partir de vos connaissances. Elles peuvent porter sur une autre édition du programme (2017, 2022), dont le contenu diffère.
 
 ## Méthode selon la demande

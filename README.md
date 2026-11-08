@@ -1,5 +1,7 @@
 # L’Avenir en commun (2027) : texte intégral et skill Claude
 
+> Projet indépendant et citoyen, sans lien avec La France insoumise et non validé par elle. Le texte reproduit est celui publié par LFI sur [melenchon2027.fr](https://melenchon2027.fr/programme/livre/).
+
 Ce dépôt contient deux choses :
 
 1. **Le programme « L’Avenir en commun » (édition 2027)** de Jean-Luc Mélenchon et de La France insoumise, en Markdown, dans [`doc/`](doc/README.md) : 1 069 mesures, un fichier par chapitre, avec un [sommaire détaillé](doc/SOMMAIRE.md) et un index de toutes les mesures ([`mesures.jsonl`](doc/mesures.jsonl)). Le texte est extrait de [melenchon2027.fr](https://melenchon2027.fr/programme/livre/) par un script déterministe, sans LLM ([`tools/extract_aec.py`](tools/extract_aec.py)).
@@ -46,12 +48,15 @@ Les deux scripts n’utilisent que la bibliothèque standard de Python.
 | Chemin | Contenu |
 |---|---|
 | `doc/` | Le programme : un fichier Markdown par page, `README.md` (sommaire), `SOMMAIRE.md` (sections et liens), `mesures.jsonl` (une mesure par ligne) |
-| `skills/avenir-en-commun/` | La skill : `SKILL.md` (instructions), `scripts/aec.py` (recherche et lecture), `evals/` (cas de test) |
+| `skills/avenir-en-commun/` | La skill : `SKILL.md` (instructions) et `scripts/aec.py` (recherche et lecture) |
+| `evals/` | Cas de test de la skill, pour `claude plugin eval` |
 | `.claude-plugin/` | Manifeste du plugin et catalogue, pour l’installation depuis GitHub |
 | `dist/` | La skill en zip, pour l’import dans l’application Claude |
 | `tools/` | Extraction du site et construction du zip |
+| `assets/` | Logo de La France insoumise (domaine public, marque déposée) et sa provenance |
 
 ## Licences
 
 - **Textes du programme** (`doc/`) : © La France insoumise, sous [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr), voir [`LICENSE`](LICENSE). Vous pouvez les reprendre en citant la source, sans usage commercial et sous la même licence.
-- **Code et skill** (`tools/`, `skills/`, `.claude-plugin/`, `dist/`) : [AGPL-3.0-or-later](tools/LICENSE). Toute version modifiée, y compris proposée comme service en ligne, doit rester libre sous la même licence.
+- **Code et skill** (`tools/`, `skills/`, `evals/`, `.claude-plugin/`, `dist/`) : [AGPL-3.0-or-later](tools/LICENSE). Toute version modifiée, y compris proposée comme service en ligne, doit rester libre sous la même licence.
+- **Logo** (`assets/`, `.claude-plugin/icon.png`) : domaine public selon Wikimedia Commons, mais marque déposée de La France insoumise ; voir [`assets/README.md`](assets/README.md).

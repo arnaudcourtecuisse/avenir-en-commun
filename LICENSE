@@ -10,9 +10,13 @@ La conversion en Markdown (dossier doc/) est diffusée sous la même licence,
 comme l'exige sa clause de partage dans les mêmes conditions. Le texte
 officiel de la licence suit.
 
-Le code et la skill (dossiers tools/, skills/, .claude-plugin/ et dist/) ne
+Le code et la skill (dossiers tools/, skills/, evals/, .claude-plugin/ et dist/) ne
 sont pas couverts par ce fichier : ils sont diffusés sous GNU Affero General
 Public License v3.0 ou ultérieure (AGPL-3.0-or-later), voir tools/LICENSE.
+
+Le logo de La France insoumise (assets/ et .claude-plugin/icon.png) relève du
+domaine public selon Wikimedia Commons, mais c'est une marque déposée : voir
+assets/README.md.
 
 =======================================================================
 

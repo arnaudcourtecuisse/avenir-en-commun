@@ -20,6 +20,9 @@ La recherche ignore la casse et les accents, et compare des débuts de mots :
 Les termes portent sur le texte de la mesure, le titre de sa section et celui
 de son chapitre ; avec --textes, aussi sur les textes de présentation.
 
+Sans réseau, le script se rabat sur la copie locale de doc/ quand la skill est
+installée comme plugin Claude Code (le plugin contient tout le dépôt).
+
 Variables d'environnement :
     AEC_BASE   autre source (URL ou dossier local contenant SOMMAIRE.md…)
     AEC_CACHE  dossier de cache (défaut : <tmp>/aec-cache) ; AEC_CACHE=off pour le désactiver
@@ -40,6 +43,10 @@ from pathlib import Path
 DEFAULT_BASE = "https://raw.githubusercontent.com/arnaudcourtecuisse/avenir-en-commun/main/doc/"
 GITHUB_VIEW = "https://github.com/arnaudcourtecuisse/avenir-en-commun/blob/main/doc/"
 TTL = 3600
+# dépôt complet (plugin Claude Code) : skills/avenir-en-commun/scripts/aec.py → doc/
+_here = Path(__file__).resolve()
+LOCAL_DOC = next((p / "doc" for p in _here.parents[:4] if (p / "doc" / "SOMMAIRE.md").exists()), None)
+_warned = False
 TYPES = {"cle": "mesure_cle", "mesure": "mesure", "sous": "sous_mesure"}
 LABEL = {"mesure_cle": "MESURE CLÉ", "mesure": "mesure", "sous_mesure": "sous-mesure"}
 
@@ -65,6 +72,14 @@ def get(name: str) -> str:
         if cached and cached.exists():  # hors ligne : version en cache, même périmée
             print(f"(réseau indisponible, cache utilisé : {e})", file=sys.stderr)
             return cached.read_text(encoding="utf-8")
+        if LOCAL_DOC and (LOCAL_DOC / name).exists():
+            # installée comme plugin Claude Code, la skill a une copie du dépôt avec elle
+            global _warned
+            if not _warned:
+                print(f"(GitHub injoignable : {e}. Copie locale du plugin utilisée, {LOCAL_DOC} ; "
+                      "elle date de la dernière mise à jour du plugin.)", file=sys.stderr)
+                _warned = True
+            return (LOCAL_DOC / name).read_text(encoding="utf-8")
         sys.exit(f"Impossible de lire {b + name} : {e}\n"
                  "Sans accès réseau depuis le code, lisez ces fichiers avec l'outil de lecture web.")
     if cached:
@@ -164,7 +179,7 @@ def cmd_mesure(a):
     for ident in a.ids:
         m = by_id.get(ident)
         if not m:
-            print(f"[{ident}] introuvable (les identifiants ont la forme 1.1.1-3 ou 5.2.1-4.1)")
+            print(f"[{ident}] introuvable (les identifiants ont la forme 1.1.1-3 ou 2.2.3-3.1)")
             continue
         print(show(m))
         if m.get("parent"):

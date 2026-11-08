@@ -7,3 +7,6 @@ __pycache__/
 
 # Cache HTML optionnel de tools/extract_aec.py --cache
 cache-html/
+
+# Rapports locaux de claude plugin eval
+evals/results/
